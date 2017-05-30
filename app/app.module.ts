@@ -6,19 +6,8 @@
 
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {AppComponent}   from './app.component';
-import {InnerComponent} from './inner.component';
-
-
-import {
-    Component, Pipe, Directive,
-    Input, Output,
-    ViewEncapsulation,
-    EventEmitter,
-    PipeTransform,
-    OnInit,
-    HostListener
-} from '@angular/core';
+import { AppComponent }   from './app.component/app.component';
+import { InnerComponent } from './inner.component/inner.component';
 
 // @NgModule - декоратор, который определяет данные для создаваемого модуля.
 // Для того чтобы приложение могло выполняться в браузере, текущий модуль (корневой модуль)

@@ -1,0 +1,7 @@
+<div>
+    <h1>My First Angular App</h1>
+    <h2>{{counter  | number: '2.0' }}</h2>
+    <h3 [hidden]="hideMe">+++++++++++++++++++++++++++++</h3>
+    <my-app-inner [name]="'N!'" [interval]="2000" (tickEmitter)="onTick()" #inner></my-app-inner>
+    <h4 *ngIf="inner.name === 'N'">{{inner.name}} : {{inner.family}}</h4>
+</div>
