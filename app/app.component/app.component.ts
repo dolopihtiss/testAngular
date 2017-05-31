@@ -6,16 +6,21 @@
 // импорт декоратора Component из модуля @angular/core
 //import { Component, NgModule } from '@angular/core';
 
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+
+//import {analyzeAndValidateNgModules} from "@angular/compiler";
 //import {InnerComponent} from './inner.component'
 
 // Применение декоратора Component для класса AppComponent
 // Декоратор используется для присвоения метаданных для класса AppComponent
 @Component({
-    selector: 'my-app',                       // Селектор, который определяет какой элемент DOM дерева будет представлять компонент.
+    selector: 'my-app', // Селектор, который определяет какой элемент DOM дерева будет представлять компонент.
+    moduleId: module.id,
     //directives: [InnerComponent],
     //template: ` `, // HTML разметка определяющая представление текущего компонента
-    templateUrl: './app/app.component/app.component.html'
+    templateUrl: 'app.component.html', //'./app/app.component/app.component.html'
+    styleUrls: ['app.component.css'],
+    encapsulation: ViewEncapsulation.Native
 })
 export class AppComponent {
     counter: number;

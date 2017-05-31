@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let elem of list; let i = index" >
+        <i> {{i}} </i>
+        <span *ngIf = "i < 2"> <b> {{elem}} </b> </span>
+        <span *ngIf = "i >= 3"> {{elem}} </span>
+    </li>
+</ul>

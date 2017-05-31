@@ -6,8 +6,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'my-app-inner',                       // Селектор, который определяет какой элемент DOM дерева будет представлять компонент.
+    moduleId: module.id,
     //template: '<span>{{name}}:{{family}}</span>', // HTML разметка определяющая представление текущего компонента
-    templateUrl: './app/inner.component/inner.component.html'
+    templateUrl: 'inner.component.html' //'./app/inner.component/inner.component1.html'
 })
 export class InnerComponent {
     @Input() name : string;
@@ -17,6 +18,7 @@ export class InnerComponent {
 
     constructor () {
         this.family = 'F';
+        this.name = 'N';
         setInterval(() => this.tick(), 10000);//this.interval);
     }
 
