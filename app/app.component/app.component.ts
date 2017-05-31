@@ -20,7 +20,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     //template: ` `, // HTML разметка определяющая представление текущего компонента
     templateUrl: 'app.component.html', //'./app/app.component/app.component.html'
     styleUrls: ['app.component.css'],
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class AppComponent {
     counter: number;

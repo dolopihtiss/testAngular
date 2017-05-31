@@ -1,5 +1,7 @@
 :host {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E03237;
+    color: aqua;
 }
 h1.lesson-title {
     padding: 0 0 6px 65px;
