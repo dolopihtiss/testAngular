@@ -8,7 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     selector: 'my-app-inner',                       // Селектор, который определяет какой элемент DOM дерева будет представлять компонент.
     moduleId: module.id,
     //template: '<span>{{name}}:{{family}}</span>', // HTML разметка определяющая представление текущего компонента
-    templateUrl: 'inner.component.html' //'./app/inner.component/inner.component1.html'
+    templateUrl: 'inner.component.html', //'./app/inner.component/inner.component1.html'
+    styleUrls: ['inner.component.css']
 })
 export class InnerComponent {
     @Input() name : string;

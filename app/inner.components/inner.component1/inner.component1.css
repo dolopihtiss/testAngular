@@ -1,0 +1,12 @@
+div:host {
+     background-color: darkred;
+ }
+
+ul {
+    background-color: #E03237;
+}
+
+li {
+    text-decoration-color: red;
+    background-color: beige;
+}
