@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    border: 4px solid rebeccapurple;
+    padding: 1%;
+}
+
+.big_price {
+    color: red;
+}

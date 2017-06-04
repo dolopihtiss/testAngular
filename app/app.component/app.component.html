@@ -1,17 +1,4 @@
-<nav>
-    <!--routerLink - директива задает адрес для ссылки -->
-    <!--routerLinkActive - директива устанавливает или удаляет класс в зависимости от состояния маршрута-->
-    <a routerLink="/inner1" routerLinkActive="active">Inner</a>
-    <a routerLink="/inner2" routerLinkActive="active">Inner 2</a>
-</nav>
-
 <div>
     <h1>My First Angular App</h1>
-    <h2>{{counter  | number: '2.0' }}</h2>
-    <h3 [hidden]="hideMe">+++++++++++++++++++++++++++++</h3>
-    <my-app-inner [name]="'N!'" [interval]="2000" (tickEmitter)="onTick()" #inner></my-app-inner>
-    <h4 *ngIf="inner.name === 'N!'">{{inner.name}} : {{inner.family}}</h4>
-
-    <!--router-outlet после данного элемента будет отображаться компонент, который выбирает роутер в соответствии с маршрутом-->
-    <router-outlet></router-outlet>
+     <my-table-host></my-table-host>
 </div>

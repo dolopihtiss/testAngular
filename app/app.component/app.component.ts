@@ -20,20 +20,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     //template: ` `, // HTML разметка определяющая представление текущего компонента
     templateUrl: 'app.component.html', //'./app/app.component/app.component.html'
     styleUrls: ['app.component.css'],
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulate
 })
-export class AppComponent {
-    counter: number;
-    hideMe: boolean;
-
-    constructor(){
-        this.counter = 0;
-    }
-
-    onTick(): void {
-        this.counter++;
-        this.hideMe = !this.hideMe;
-    }
-
-} // Класс определяющий поведение компонента   [hidden]="hideMe"
+export class AppComponent {}
 

@@ -1,0 +1,36 @@
+<ng-content></ng-content>
+<label>Категория:
+    <select [(ngModel)]="category" size="1">
+        <option selected value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+    </select>
+</label>
+<table class = "table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Category</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of rows let i = index">
+            <td [style.color]="row.price>500 ? 'red' : ''">{{row.id}}</td>
+            <td>{{row.category}}</td>
+            <td [class.big_price]="row.price>500">{{row.name}}</td>
+            <td>{{row.price}}</td>
+            <td><button (click)="clickDelete(row)">Delete</button></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>.</th>
+            <th>.</th>
+            <th>.</th>
+            <th>{{totalPrice}}</th>
+            <th>.</th>
+        </tr>
+    </tfoot>
+</table>
